@@ -7,7 +7,8 @@ const fetchdata = async () => {
     const { data } = await axios.get("/api/1-hello");
     result.textContent = data;
   } catch (e) {
-    console.log(e.response.data);
+    //console.log(e.response.data);
+    result.textContent=e.response.data
   }
 };
 fetchdata();
